@@ -1,0 +1,67 @@
+.card {
+  width: 400px;
+  display: flex;
+  box-shadow : 3px 3px #c1bdbdd3;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 1rem;
+  margin: 2rem auto;
+
+}
+.card__container-left {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(234, 234, 234, 0.748);
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  padding: 0.7rem;
+  overflow: hidden;
+}
+
+.container-left__avatar {
+  width: 75px;
+  border-radius: 2rem;
+}
+
+.card__container-right {
+  width: 75%;
+  display: flex;
+  justify-content: left;
+  padding: 0.6rem;
+  background-color: rgb(218, 217, 217);
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  font-size: 0.9rem;
+  overflow: hidden;
+}
+.provider {
+  background-color: rgb(69, 136, 237);
+
+}
+.container-right__div-left, .container-right__div-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.container-right__div-right {
+  margin-left: 1rem;
+}
+
+.div-left__label, .div-right__label {
+  font-weight: 700;
+}
+
+.div-left__text,
+.div-right__text,
+.div-left__label,
+.div-right__label {
+  margin: 0;
+  height: 1.2rem;
+}
+
+.div-left__text,
+.div-right__text {
+  margin-bottom: 0.5rem;
+}

@@ -1,0 +1,23 @@
+<div class="card">
+  <div class="card__container-left" >
+    <a routerLink="'/card'" routerLinkActive="active" ariaCurrentWhenActive="page">
+      <img class="container-left__avatar" [src]="singleContact.picture" alt="avatar contact">
+    </a>
+  </div>
+  <div [ngClass]="{ provider: singleContact.status === 'customer' }" class="card__container-right" >
+    <div class="container-right__div-top">
+      <div class="div-top__last-name">
+        <p class="div-top__label" >Nom</p>
+        <p class="div-top__text">{{ singleContact.lastName }}</p>
+      </div>
+      <div class="div-top__first-name">
+        <p class="div-top__label">Prénom</p>
+        <p class="div-top__text">{{ singleContact.firstName }}</p>
+      </div>
+    </div>
+    <div class="container-right__div-bottom" >
+      <button (click)="onViewCard()" class="div-bottom__button">View contact</button>
+    </div>
+  </div>
+</div>
+

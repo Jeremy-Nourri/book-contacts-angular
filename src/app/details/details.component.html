@@ -1,0 +1,19 @@
+<div class="card">
+  <div class="card__container-left" >
+      <img class="container-left__avatar" [src]="!contact.picture ? 'https://png.pngtree.com/png-clipart/20210915/ourmid/pngtree-user-avatar-placeholder-black-png-image_3918427.jpg' : contact.picture" alt="avatar contact">
+  </div>
+  <div [ngClass]="{ provider: contact.status === 'customer' }" class="card__container-right" >
+    <div class="container-right__div-left">
+      <p class="div-left__label" >Nom</p>
+      <p class="div-left__text">{{ contact.lastName }}</p>
+      <p class="div-left__label">E-mail</p>
+      <p class="div-left__text">{{ contact.email }}</p>
+    </div>
+    <div class="container-right__div-right" >
+      <p class="div-left__label">Prénom</p>
+      <p class="div-left__text">{{ contact.firstName }}</p>
+      <p class="div-left__label">Téléphone</p>
+      <p class="div-left__text">{{ contact.mobile }}</p>
+    </div>
+  </div>
+</div>

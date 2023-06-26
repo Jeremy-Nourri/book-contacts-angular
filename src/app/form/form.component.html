@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="container__form">
+    <form [formGroup]="contactForm" autocomplete="on" (ngSubmit)="onSubmitForm()">
+      <label for="picture">URL de la photo</label>
+      <input type="text" name="picture" id="picture" formControlName="picture" >
+      <label for="lastName">Nom</label>
+      <input type="text" name="lastName" id="lastName" formControlName="lastName" [attr.maxlength]="20">
+      <label for="firstName">Prénom</label>
+      <input type="text" name="firstName" id="firstName" formControlName="firstName" [attr.maxlength]="15">
+      <label for="email">E-mail</label>
+      <input type="email" name="email" id="email" formControlName="email" [attr.maxlength]="20">
+      <label for="mobile">Téléphone</label>
+      <input type="tel" name="mobile" id="mobile" formControlName="mobile" [attr.maxlength]="10">
+      <label for="status">Sélectionnez votre statut</label>
+      <select name="status" id="status" formControlName="status">
+        <option value="client">Client</option>
+        <option value="fournisseur">Fournisseur</option>
+      </select>
+
+      <input class="form__input-submit" type="submit" value="Enregistrer" [disabled]="contactForm.invalid" >
+    </form>
+  </div>
+  <div class="container__preview">
+    <p class="preview__text">Prévisualisation du contact</p>
+    <app-details [contact]="contact" *ngIf="cardPreview$ | async as contact"></app-details>
+  </div>
+
+
+</div>

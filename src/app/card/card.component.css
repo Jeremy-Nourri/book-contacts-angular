@@ -1,0 +1,76 @@
+.card {
+  width: 270px;
+  display: flex;
+  box-shadow : 3px 3px #c1bdbdd3;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 1rem;
+  margin: 1rem;
+
+}
+.card__container-left {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(234, 234, 234, 0.748);
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  padding: 0.7rem;
+  overflow: hidden;
+}
+
+.container-left__avatar {
+  width: 60px;
+  border-radius: 1rem;
+}
+
+.card__container-right {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 0.6rem;
+  background-color: rgb(218, 217, 217);
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  font-size: 0.9rem;
+  overflow: hidden;
+}
+.provider {
+  background-color: rgba(38, 109, 215, 0.896);
+
+}
+.container-right__div-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.div-top__last-name, .div-top__first-name {
+  display: flex;
+}
+
+.div-top__label {
+  font-weight: 700;
+}
+
+.div-top__text,
+.div-top__label {
+  margin: 0 0.8rem;
+}
+
+.container-right__div-bottom {
+  margin-top: 0.8rem;
+  text-align: center;
+}
+
+.div-bottom__button {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.div-bottom__button:hover {
+    background-color: #d1cece;
+  }
